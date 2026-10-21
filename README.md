@@ -1,3 +1,5 @@
+> **The Computer Plumbers self-hosted fork.** This is a modified version of [hieunc229/mailflare](https://github.com/hieunc229/mailflare), licensed under AGPL-3.0. It removes the Pro/Team license system: every feature (unlimited accounts, shared inboxes, forwarding, branding, booking hosts) is always on, and the Upgrade button, Licenses page and Paymug license calls are gone. Upstream changes are merged from `upstream/main`.
+
 <img src="/public/icon-96.png" alt="Mailflare" width="72" />
 
 # Mailflare
