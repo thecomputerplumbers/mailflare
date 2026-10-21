@@ -18,7 +18,8 @@ export function SidebarHeader({ href, label }: SidebarHeaderProps) {
 	return (
 		<div className={`mb-3 flex h-10 items-center ${minimal ? "" : "gap-2 px-1"}`}>
 			{minimal ? <Tooltip label={t("navigation.expandMenu")} placement="right">{toggleButton}</Tooltip> : toggleButton}
-			{!minimal && <Link href={href} className="flex min-w-0 items-center gap-3"><img src={branding.iconUrl} height={32} width={32} alt="" /><span className="truncate text-lg font-semibold text-neutral-800">{label ?? branding.appName}</span></Link>}
+			{/* Fork: the expanded sidebar shows The Computer Plumbers wordmark instead of the square icon and app name. */}
+			{!minimal && <Link href={href} className="flex min-w-0 items-center gap-2"><img src="/wordmark.png" height={40} width={72} alt={branding.appName} className="h-10 w-auto shrink-0" />{label && <span className="truncate text-lg font-semibold text-neutral-800">{label}</span>}</Link>}
 		</div>
 	);
 }
